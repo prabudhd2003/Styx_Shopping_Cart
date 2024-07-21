@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Styx_Shopping_Cart/static/css/main.7b3568ba.css",
+    "main.js": "/Styx_Shopping_Cart/static/js/main.4c1ab06d.js",
+    "static/media/product7.jpg": "/Styx_Shopping_Cart/static/media/product7.3eca24ea29399043ca7b.jpg",
+    "static/media/product2.jpg": "/Styx_Shopping_Cart/static/media/product2.59f7699207fa36817132.jpg",
+    "static/media/product10.jpg": "/Styx_Shopping_Cart/static/media/product10.09a908e2b4d66ea3abed.jpg",
+    "static/media/product4.jpg": "/Styx_Shopping_Cart/static/media/product4.723a4a881d34a9741486.jpg",
+    "static/media/product9.jpg": "/Styx_Shopping_Cart/static/media/product9.c5e12ba2997a46f66c08.jpg",
+    "static/media/product6.jpg": "/Styx_Shopping_Cart/static/media/product6.6ec51ee1a0dffd48151f.jpg",
+    "static/media/product8.jpg": "/Styx_Shopping_Cart/static/media/product8.5ff54509ef398dca5667.jpg",
+    "static/media/product3.jpg": "/Styx_Shopping_Cart/static/media/product3.659fff384090e2a9a379.jpg",
+    "index.html": "/Styx_Shopping_Cart/index.html",
+    "main.7b3568ba.css.map": "/Styx_Shopping_Cart/static/css/main.7b3568ba.css.map",
+    "main.4c1ab06d.js.map": "/Styx_Shopping_Cart/static/js/main.4c1ab06d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b3568ba.css",
+    "static/js/main.4c1ab06d.js"
+  ]
+}
