@@ -40,6 +40,3 @@ const Cart = ({ cartItems, removeFromCart, updateQuantity }) => {
 };
 
 export default Cart;
-
-
-
