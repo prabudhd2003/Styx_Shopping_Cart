@@ -2,8 +2,9 @@ import React from 'react';
 import './Cart.css';
 
 const Cart = ({ cartItems, removeFromCart, updateQuantity }) => {
+  // Calculate total cost
   const totalCost = cartItems.reduce((total, { product, quantity }) => {
-    return total + parseFloat(product.price.replace('$', '')) * quantity;
+    return total + parseFloat(product.price.replace('Rs ', '')) * quantity;
   }, 0);
 
   if (cartItems.length === 0) {
@@ -21,7 +22,7 @@ const Cart = ({ cartItems, removeFromCart, updateQuantity }) => {
         <div key={product.id} className="cart-item">
           <img src={product.image} alt={product.name} className="cart-item-image" />
           <h4>{product.name}</h4>
-          <p>Price: {product.price}</p>
+          <p>Price: Rs {product.price}</p>
           <input
             type="number"
             value={quantity}
@@ -32,11 +33,12 @@ const Cart = ({ cartItems, removeFromCart, updateQuantity }) => {
         </div>
       ))}
       <div className="cart-total">
-        <h3>Total Cost: ${totalCost.toFixed(2)}</h3>
+        <h3>Total Cost: Rs {totalCost.toFixed(2)}</h3>
       </div>
     </div>
   );
 };
 
 export default Cart;
+
 
