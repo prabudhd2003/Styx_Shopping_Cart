@@ -20,7 +20,7 @@ const generateProducts = (count) => {
   return Array.from({ length: count }, (_, index) => ({
     id: index + 1,
     name: `Product ${index + 1}`,
-    price: `$Rs {(index + 1) * 5}`,
+    price: `$${(index + 1) * 5}`,
     image: images[index % images.length]
   }));
 };
