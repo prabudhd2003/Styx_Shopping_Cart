@@ -1,14 +1,19 @@
 import React from 'react';
-import Product from './Product';
 
 const ProductList = ({ products, addToCart }) => {
   return (
     <div className="product-list">
       {products.map(product => (
-        <Product key={product.id} product={product} addToCart={addToCart} />
+        <div key={product.id} className="product">
+          <img src={product.image} alt={product.name} className="product-image" />
+          <h3>{product.name}</h3>
+          <p>Price: Rs {product.price}</p>
+          <button onClick={() => addToCart(product)}>Add to Cart</button>
+        </div>
       ))}
     </div>
   );
 };
 
 export default ProductList;
+
