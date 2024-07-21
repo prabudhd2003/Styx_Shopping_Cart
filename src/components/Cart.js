@@ -4,7 +4,7 @@ import './Cart.css';
 const Cart = ({ cartItems, removeFromCart, updateQuantity }) => {
   // Calculate total cost
   const totalCost = cartItems.reduce((total, { product, quantity }) => {
-    return total + parseFloat(product.price.replace('Rs ', '')) * quantity;
+    return total + parseFloat(product.price.replace('Rs ', '').replace('$', '')) * quantity;
   }, 0);
 
   if (cartItems.length === 0) {
@@ -22,7 +22,7 @@ const Cart = ({ cartItems, removeFromCart, updateQuantity }) => {
         <div key={product.id} className="cart-item">
           <img src={product.image} alt={product.name} className="cart-item-image" />
           <h4>{product.name}</h4>
-          <p>Price: Rs {product.price}</p>
+          <p>Price: Rs {product.price.replace('$', '')}</p> {/* Ensure no $ symbol */}
           <input
             type="number"
             value={quantity}
@@ -40,5 +40,6 @@ const Cart = ({ cartItems, removeFromCart, updateQuantity }) => {
 };
 
 export default Cart;
+
 
 
